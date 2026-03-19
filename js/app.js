@@ -98,24 +98,9 @@
         requestAnimationFrame(step);
     }
 
-    // ========== HERO PARALLAX ==========
+    // ========== HERO PARALLAX (disabled - static composition) ==========
     function initParallax() {
-        var heroVisual = document.getElementById('heroVisual');
-        if (!heroVisual || window.innerWidth < 1024) return;
-
-        var leaves = heroVisual.querySelectorAll('.hero-leaf');
-
-        document.addEventListener('mousemove', function (e) {
-            var x = (e.clientX / window.innerWidth - 0.5) * 2;
-            var y = (e.clientY / window.innerHeight - 0.5) * 2;
-
-            leaves.forEach(function (leaf) {
-                var speed = parseFloat(leaf.getAttribute('data-speed') || '0.02');
-                var moveX = x * speed * 100;
-                var moveY = y * speed * 100;
-                leaf.style.transform = 'translate(' + moveX + 'px, ' + moveY + 'px)';
-            });
-        });
+        // Parallax disabled: logo composition remains static
     }
 
     // ========== MOBILE MENU ==========
