@@ -560,39 +560,75 @@
                         </div>
                     </div>
 
-                    <!-- Right (40%) - SVG Decorative Leaves -->
+                    <!-- Right (40%) - SVG Logo Composition -->
                     <div class="lg:col-span-2 relative hidden lg:flex items-center justify-center" id="heroVisual">
                         <svg viewBox="0 0 400 500" class="w-full max-w-sm" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <!-- Large leaf -->
+
+                            <!-- Background rounded rectangle -->
+                            <g class="hero-leaf" data-speed="0.015">
+                                <rect x="60" y="60" width="280" height="380" rx="24" fill="#eff6eb" opacity="0.5"/>
+                            </g>
+
+                            <!-- Horizontal accent lines (logo motif) -->
                             <g class="hero-leaf" data-speed="0.03">
-                                <path d="M200 50C200 50 100 150 100 250c0 55.228 44.772 100 100 100s100-44.772 100-100C300 150 200 50 200 50z" fill="#def0d8" stroke="#3d7a52" stroke-width="1.5" opacity="0.6"/>
-                                <path d="M200 90v220M200 140c-25 5-55 25-55 60M200 120c30 5 65 30 65 70" stroke="#3d7a52" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                                <line x1="80" y1="195" x2="175" y2="195" stroke="#6b9e78" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+                                <line x1="80" y1="200" x2="140" y2="200" stroke="#6b9e78" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round" opacity="0.4"/>
+                                <line x1="225" y1="195" x2="320" y2="195" stroke="#6b9e78" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+                                <line x1="260" y1="200" x2="320" y2="200" stroke="#6b9e78" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round" opacity="0.4"/>
+                                <!-- Lower set -->
+                                <line x1="80" y1="310" x2="160" y2="310" stroke="#6b9e78" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+                                <line x1="240" y1="310" x2="320" y2="310" stroke="#6b9e78" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
                             </g>
-                            <!-- Medium leaf top-right -->
-                            <g class="hero-leaf" data-speed="0.05">
-                                <path d="M310 30C310 30 265 80 265 130c0 24.853 20.147 45 45 45s45-20.147 45-45C355 80 310 30 310 30z" fill="#c5ddbe" stroke="#6b9e78" stroke-width="1" opacity="0.7"/>
-                                <path d="M310 50v100" stroke="#6b9e78" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
-                            </g>
-                            <!-- Small leaf left -->
-                            <g class="hero-leaf" data-speed="0.07">
-                                <path d="M70 180C70 180 40 215 40 250c0 16.569 13.431 30 30 30s30-13.431 30-30C100 215 70 180 70 180z" fill="#def0d8" stroke="#3d7a52" stroke-width="1" opacity="0.5"/>
-                            </g>
-                            <!-- Dot decorations -->
-                            <g class="hero-leaf" data-speed="0.04">
-                                <circle cx="340" cy="220" r="5" fill="#6b9e78" opacity="0.3"/>
-                                <circle cx="60" cy="350" r="4" fill="#3d7a52" opacity="0.2"/>
-                                <circle cx="280" cy="400" r="6" fill="#def0d8" stroke="#3d7a52" stroke-width="1" opacity="0.4"/>
-                                <circle cx="150" cy="420" r="3" fill="#6b9e78" opacity="0.3"/>
-                            </g>
-                            <!-- Abstract lines -->
+
+                            <!-- Large S monogram -->
                             <g class="hero-leaf" data-speed="0.02">
-                                <line x1="320" y1="300" x2="380" y2="280" stroke="#def0d8" stroke-width="2" opacity="0.4"/>
-                                <line x1="40" y1="120" x2="80" y2="140" stroke="#c5ddbe" stroke-width="2" opacity="0.3"/>
+                                <text x="200" y="290" text-anchor="middle" font-family="'DM Serif Display',Georgia,serif" font-size="180" font-weight="400" fill="#0f1e15" opacity="0.12" letter-spacing="-5">S</text>
+                                <text x="200" y="290" text-anchor="middle" font-family="'DM Serif Display',Georgia,serif" font-size="180" font-weight="400" fill="none" stroke="#3d7a52" stroke-width="1.5" opacity="0.35" letter-spacing="-5">S</text>
                             </g>
-                            <!-- Medium leaf bottom -->
+
+                            <!-- STUDIO text fragment -->
+                            <g class="hero-leaf" data-speed="0.04">
+                                <text x="200" y="165" text-anchor="middle" font-family="'DM Serif Display',Georgia,serif" font-size="32" font-weight="400" fill="#0f1e15" opacity="0.18" letter-spacing="12">STUDIO</text>
+                            </g>
+
+                            <!-- SCHEMBRI text fragment -->
+                            <g class="hero-leaf" data-speed="0.04">
+                                <text x="200" y="345" text-anchor="middle" font-family="'DM Serif Display',Georgia,serif" font-size="32" font-weight="400" fill="#0f1e15" opacity="0.18" letter-spacing="8">SCHEMBRI</text>
+                            </g>
+
+                            <!-- Floating geometric accents -->
                             <g class="hero-leaf" data-speed="0.06">
-                                <path d="M160 380C160 380 125 420 125 460c0 22.091 15.67 40 35 40s35-17.909 35-40C195 420 160 380 160 380z" fill="#eff6eb" stroke="#6b9e78" stroke-width="1" opacity="0.5"/>
-                                <path d="M160 395v75" stroke="#6b9e78" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+                                <rect x="305" y="80" width="50" height="50" rx="12" fill="#def0d8" opacity="0.5"/>
+                                <rect x="315" y="90" width="30" height="30" rx="6" fill="none" stroke="#3d7a52" stroke-width="1" opacity="0.3"/>
+                            </g>
+
+                            <g class="hero-leaf" data-speed="0.07">
+                                <rect x="45" y="370" width="40" height="40" rx="10" fill="#def0d8" opacity="0.4"/>
+                                <rect x="53" y="378" width="24" height="24" rx="5" fill="none" stroke="#3d7a52" stroke-width="1" opacity="0.25"/>
+                            </g>
+
+                            <!-- Small circles -->
+                            <g class="hero-leaf" data-speed="0.05">
+                                <circle cx="340" cy="180" r="6" fill="#6b9e78" opacity="0.25"/>
+                                <circle cx="55" cy="140" r="4" fill="#3d7a52" opacity="0.2"/>
+                                <circle cx="320" cy="400" r="5" fill="#def0d8" opacity="0.5"/>
+                                <circle cx="80" cy="440" r="3" fill="#6b9e78" opacity="0.3"/>
+                                <circle cx="350" cy="310" r="3.5" fill="#3d7a52" opacity="0.15"/>
+                            </g>
+
+                            <!-- Diagonal accent lines -->
+                            <g class="hero-leaf" data-speed="0.035">
+                                <line x1="310" y1="350" x2="360" y2="330" stroke="#c5ddbe" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+                                <line x1="40" y1="200" x2="55" y2="180" stroke="#c5ddbe" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>
+                                <line x1="345" y1="140" x2="370" y2="155" stroke="#def0d8" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                            </g>
+
+                            <!-- Inner frame corners -->
+                            <g class="hero-leaf" data-speed="0.025">
+                                <path d="M100 110 L100 90 L120 90" fill="none" stroke="#3d7a52" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+                                <path d="M300 110 L300 90 L280 90" fill="none" stroke="#3d7a52" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+                                <path d="M100 400 L100 420 L120 420" fill="none" stroke="#3d7a52" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+                                <path d="M300 400 L300 420 L280 420" fill="none" stroke="#3d7a52" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
                             </g>
                         </svg>
                     </div>
