@@ -258,6 +258,7 @@
         .mobile-overlay.open a:nth-child(4) { transition-delay: 0.25s; }
         .mobile-overlay.open a:nth-child(5) { transition-delay: 0.3s; }
         .mobile-overlay.open a:nth-child(6) { transition-delay: 0.35s; }
+        .mobile-overlay.open a:nth-child(7) { transition-delay: 0.4s; }
 
         /* Hero parallax leaves */
         .hero-leaf {
@@ -498,6 +499,7 @@
             <div class="nav-links hidden lg:flex items-center gap-8">
                 <a href="#servizi">Servizi</a>
                 <a href="#studio">Lo Studio</a>
+                <a href="#recensioni">Recensioni</a>
                 <a href="#sedi">Sedi</a>
                 <a href="#contatti">Contatti</a>
             </div>
@@ -520,6 +522,7 @@
         <a href="#" onclick="closeMobileMenu()">Home</a>
         <a href="#servizi" onclick="closeMobileMenu()">Servizi</a>
         <a href="#studio" onclick="closeMobileMenu()">Lo Studio</a>
+        <a href="#recensioni" onclick="closeMobileMenu()">Recensioni</a>
         <a href="#sedi" onclick="closeMobileMenu()">Sedi</a>
         <a href="#contatti" onclick="closeMobileMenu()">Contatti</a>
         <a href="#contatti" onclick="closeMobileMenu()" class="mt-4 text-lg !text-forest-700">Prenota consulenza &rarr;</a>
@@ -847,8 +850,88 @@
             </div>
         </section>
 
+        <!-- ========== RECENSIONI ========== -->
+        <section id="recensioni" class="py-20 lg:py-28 bg-sand-100 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16" data-reveal="fade-up">
+                    <span class="text-forest-600 font-semibold text-sm tracking-widest uppercase">Recensioni</span>
+                    <h2 class="font-heading text-forest-950 text-3xl lg:text-5xl mt-3 mb-4">Cosa dicono i nostri clienti</h2>
+                    <p class="text-forest-950/60 text-lg">La fiducia dei nostri clienti &egrave; la nostra migliore referenza.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Review 1 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-sm relative" data-reveal="fade-up">
+                        <svg class="absolute top-6 right-6 w-8 h-8 text-forest-100" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.75-9.57 9-10.609L10 5.151c-2.432.917-4.014 3.638-4.014 5.849H10v10H0z"/></svg>
+                        <!-- Stars -->
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-forest-950/70 text-sm leading-relaxed mb-6">&ldquo;Ci affidiamo allo Studio Schembri da oltre quindici anni per la gestione contabile e fiscale della nostra azienda. Professionalit&agrave;, precisione e disponibilit&agrave; sono le qualit&agrave; che li contraddistinguono.&rdquo;</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center">
+                                <span class="text-forest-700 font-semibold text-sm">MR</span>
+                            </div>
+                            <div>
+                                <div class="text-forest-950 font-semibold text-sm">Marco R.</div>
+                                <div class="text-forest-950/50 text-xs">Imprenditore agricolo</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-sm relative" data-reveal="fade-up" data-delay="100">
+                        <svg class="absolute top-6 right-6 w-8 h-8 text-forest-100" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.75-9.57 9-10.609L10 5.151c-2.432.917-4.014 3.638-4.014 5.849H10v10H0z"/></svg>
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-forest-950/70 text-sm leading-relaxed mb-6">&ldquo;Ho trovato nello Studio Schembri un punto di riferimento per tutte le pratiche fiscali della mia famiglia. Il 730, l'ISEE, le successioni: tutto gestito con cura e in tempi rapidissimi. Consigliatissimo.&rdquo;</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center">
+                                <span class="text-forest-700 font-semibold text-sm">AG</span>
+                            </div>
+                            <div>
+                                <div class="text-forest-950 font-semibold text-sm">Anna G.</div>
+                                <div class="text-forest-950/50 text-xs">Privata</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-sm relative" data-reveal="fade-up" data-delay="200">
+                        <svg class="absolute top-6 right-6 w-8 h-8 text-forest-100" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.75-9.57 9-10.609L10 5.151c-2.432.917-4.014 3.638-4.014 5.849H10v10H0z"/></svg>
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-forest-950/70 text-sm leading-relaxed mb-6">&ldquo;Quando ho aperto la mia attivit&agrave; commerciale non sapevo da dove iniziare. Paolo mi ha seguito passo dopo passo, dalla costituzione della societ&agrave; alla gestione ordinaria. Un professionista serio e competente.&rdquo;</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center">
+                                <span class="text-forest-700 font-semibold text-sm">SL</span>
+                            </div>
+                            <div>
+                                <div class="text-forest-950 font-semibold text-sm">Salvatore L.</div>
+                                <div class="text-forest-950/50 text-xs">Commerciante</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ========== SEDI ========== -->
-        <section id="sedi" class="py-20 lg:py-28 bg-sand-100">
+        <section id="sedi" class="py-20 lg:py-28 bg-forest-50">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
                 <div class="text-center max-w-2xl mx-auto mb-16" data-reveal="fade-up">
                     <span class="text-forest-600 font-semibold text-sm tracking-widest uppercase">Sedi</span>
@@ -1060,6 +1143,7 @@
                         <li><a href="#hero" class="text-white/60 hover:text-white text-sm transition-colors no-underline">Home</a></li>
                         <li><a href="#servizi" class="text-white/60 hover:text-white text-sm transition-colors no-underline">Servizi</a></li>
                         <li><a href="#studio" class="text-white/60 hover:text-white text-sm transition-colors no-underline">Lo Studio</a></li>
+                        <li><a href="#recensioni" class="text-white/60 hover:text-white text-sm transition-colors no-underline">Recensioni</a></li>
                         <li><a href="#sedi" class="text-white/60 hover:text-white text-sm transition-colors no-underline">Sedi</a></li>
                         <li><a href="#contatti" class="text-white/60 hover:text-white text-sm transition-colors no-underline">Contatti</a></li>
                     </ul>
