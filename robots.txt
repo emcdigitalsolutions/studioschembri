@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /privacy.html
-Disallow: /cookie-policy.html
 
-Sitemap: https://studioschembri.it/sitemap.xml
+Sitemap: https://emcdigitalsolutions.github.io/studioschembri/sitemap.xml
