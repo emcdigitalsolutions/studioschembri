@@ -473,6 +473,7 @@
             background: #e2d9cd;
         }
     </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Di quali servizi vi occupate?","acceptedAnswer":{"@type":"Answer","text":"Contabilità, dichiarazioni fiscali, consulenza fiscale e aziendale, buste paga e adempimenti per privati, professionisti e imprese."}},{"@type":"Question","name":"Seguite l’apertura della partita IVA e nuove attività?","acceptedAnswer":{"@type":"Answer","text":"Sì, assistiamo nell’avvio dell’attività: scelta del regime fiscale, adempimenti e gestione di tutte le pratiche."}},{"@type":"Question","name":"Lavorate sia con privati che con aziende?","acceptedAnswer":{"@type":"Answer","text":"Sì, seguiamo privati, professionisti, ditte individuali e società con assistenza dedicata."}},{"@type":"Question","name":"Dove avete sede?","acceptedAnswer":{"@type":"Answer","text":"Abbiamo sede a Campobello di Licata e a Ravanusa (AG)."}},{"@type":"Question","name":"Come si fissa un appuntamento?","acceptedAnswer":{"@type":"Answer","text":"Contattaci per telefono o email: fissiamo un incontro conoscitivo per capire le tue esigenze."}},{"@type":"Question","name":"Offrite consulenza continuativa?","acceptedAnswer":{"@type":"Answer","text":"Sì, affianchiamo i clienti durante tutto l’anno con consulenza e assistenza fiscale dedicata."}}]}</script>
 </head>
 <body>
     <!-- Skip Link -->
@@ -1117,7 +1118,37 @@
     </main>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="bg-forest-950 pt-16 pb-8">
+    
+<!-- FAQ (EMC) -->
+<section class="emcfaq-sec" id="faq">
+  <div class="emcfaq-wrap">
+    <p class="emcfaq-eye">FAQ</p>
+    <h2 class="emcfaq-title">Domande frequenti</h2>
+    <div class="emcfaq-list">
+      <details><summary>Di quali servizi vi occupate?</summary><p>Contabilità, dichiarazioni fiscali, consulenza fiscale e aziendale, buste paga e adempimenti per privati, professionisti e imprese.</p></details>
+      <details><summary>Seguite l’apertura della partita IVA e nuove attività?</summary><p>Sì, assistiamo nell’avvio dell’attività: scelta del regime fiscale, adempimenti e gestione di tutte le pratiche.</p></details>
+      <details><summary>Lavorate sia con privati che con aziende?</summary><p>Sì, seguiamo privati, professionisti, ditte individuali e società con assistenza dedicata.</p></details>
+      <details><summary>Dove avete sede?</summary><p>Abbiamo sede a Campobello di Licata e a Ravanusa (AG).</p></details>
+      <details><summary>Come si fissa un appuntamento?</summary><p>Contattaci per telefono o email: fissiamo un incontro conoscitivo per capire le tue esigenze.</p></details>
+      <details><summary>Offrite consulenza continuativa?</summary><p>Sì, affianchiamo i clienti durante tutto l’anno con consulenza e assistenza fiscale dedicata.</p></details>
+    </div>
+  </div>
+</section>
+<style>
+.emcfaq-sec{background:#f0f4f1;padding:72px 20px;font-family:'Plus Jakarta Sans',sans-serif}
+.emcfaq-wrap{max-width:820px;margin:0 auto}
+.emcfaq-eye{text-align:center;text-transform:uppercase;letter-spacing:.2em;font-size:13px;font-weight:700;color:#1f4030;margin:0 0 8px}
+.emcfaq-title{text-align:center;font-family:'DM Serif Display',Georgia,serif;font-size:36px;color:#0f1e15;margin:0 0 30px}
+.emcfaq-list details{background:#ffffff;border:1px solid #dde7e0;border-radius:14px;margin-bottom:12px;padding:0 22px}
+.emcfaq-list summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:700;color:#0f1e15;display:flex;justify-content:space-between;gap:14px;align-items:center;font-size:17px}
+.emcfaq-list summary::-webkit-details-marker{display:none}
+.emcfaq-list summary::after{content:"+";font-size:24px;font-weight:400;color:#3d7a52;transition:.2s;flex-shrink:0}
+.emcfaq-list details[open] summary::after{transform:rotate(45deg)}
+.emcfaq-list details p{padding:0 0 18px;margin:0;color:#55665d;line-height:1.65}
+@media(max-width:600px){.emcfaq-title{font-size:27px}}
+</style>
+
+<footer class="bg-forest-950 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <!-- Logo centered -->
             <div class="flex justify-center mb-12">
